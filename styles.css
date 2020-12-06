@@ -1,0 +1,18 @@
+#output {
+  background: black;
+  width: 200px;
+  color: white;
+  pointer: cursor;
+}
+#btn {
+  text-align: center;
+  width: 80px;
+  height: 40px;
+  font-size: 12;
+  background: rgb(26, 216, 26);
+  color: white;
+}
+#btn:hover {
+  color: rgb(26, 216, 26);
+  background: white;
+}

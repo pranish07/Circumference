@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>circumference</title>
 </head>
+
 <body>
-    <p> radius of a circle = 2;</p>
-<button onclick= "calcCircumference()" > Calculate</button>
+  <!-- <p> radius of a circle = 2;</p> -->
+  <input id="radius" type="text" placeholder="Enter the radius of circle"> <br><br>
+  <button id="btn"> Calculate</button><br>
+  <div id="output"></div>
 
+
+
+  <script>
+    let radius = document.getElementById("radius");
+    let result = document.getElementById("output");
+    let button = document.getElementById("btn");
+
+    function calcCircumference(r) {
+      console.log("Hello");
+      let circumference = 2 * Math.PI * r;
+      result.innerHTML = `The circumference is ${circumference}`;
+    }
+
+    button.addEventListener("click", function () {
+      calcCircumference(radius.value);
+    });
+
+
+  </script>
 </body>
-
-        <script src= "circumference.js">
-
-    </script>
 
 </html>
